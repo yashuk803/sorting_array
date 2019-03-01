@@ -1,0 +1,31 @@
+{
+  "name": "yashuk803/sorting-array",
+  "description": "This is library for sorting array.",
+  "keywords": ["array", "usort", "arsort", "null objects", "strategy"],
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Tarantsova Mariia",
+      "email": "yashuk803@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "friendsofphp/php-cs-fixer": "^2.14"
+  },
+  "autoload": {
+    "psr-4": {
+      "Yashuk803\\Sorting": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Yashuk803\\Test\\": "tests/"
+    }
+  }
+}
