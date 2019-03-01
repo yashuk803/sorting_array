@@ -6,13 +6,21 @@ This is a library for sorting array
 Installation
 ------------
 
-For creating new project based on this template just execute the following command
+* For creating new project based on this template just execute the following command
 
 ```
 $ git clone https://github.com/yashuk803/library_serializer.git
 
 $ composer install
 ```
+
+* Or use composer
+
+```
+composer require yashuk803/sorting-array
+
+```
+
 Usage
 -----
 
