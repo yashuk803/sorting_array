@@ -1,31 +1,4 @@
-Library Sorting Array
-===============
-
-This is a library for sorting array 
-
-Installation
-------------
-
-For creating new project based on this template just execute the following command
-
-```
-$ git clone https://github.com/yashuk803/library_serializer.git
-
-$ composer install
-```
-Usage
------
-
-1. Create Array which you want sort
-2. In folder test you can see exemple how this library use
-3. You can use two type sorting array Ascending or Descending
-4. When you can use empty array method sorter return message 'Array is empty'
-
-Exemple
-----------------
-./tests/sorter
-
-```php
+#!/usr/bin/env php
 <?php
 
 require_once __DIR__ . '/../vendor/autoload.php';
@@ -38,7 +11,7 @@ $dataset = ['orange', 'charry', 'banana'];
 
 $sorter = new Sorter($factory->createAscendingSort());
 print_r($sorter->sort($dataset));
-/* 
+/*
 Array
 (
     [0] => orange
@@ -62,7 +35,7 @@ $dataset = [4, 6, 10, 5, 8, 16];
 
 $sorter = new Sorter($factory->createAscendingSort());
 print_r($sorter->sort($dataset));
-/* 
+/*
 Array
 (
     [5] => 16
@@ -94,5 +67,3 @@ print_r($sorter->sort($dataset)); //Array is empty
 
 $sorter = new Sorter($factory->createDescendingSort());
 print_r($sorter->sort($dataset)); //Array is empty
-```
-

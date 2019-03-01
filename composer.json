@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Yashuk803\\Sorting": "src/"
+      "Yashuk803\\Sorting\\": "src/"
     }
   },
   "autoload-dev": {
