@@ -17,13 +17,13 @@ Usage
 -----
 
 1. Create Array which you want sort
-2. In folder test you can see exemple how this library use
+2. In folder test you can see exemple how to use this library
 3. You can use two type sorting array Ascending or Descending
-4. When you can use empty array method sorter return message 'Array is empty'
+4. When you can use empty array, method sorter return message 'Array is empty'
 
 Exemple
 ----------------
-./tests/sorter
+./tests/sorter/sorter.php
 
 ```php
 <?php
