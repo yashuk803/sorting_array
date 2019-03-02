@@ -23,9 +23,10 @@ class Sorter
      */
     public function sort(array $dataset)
     {
-        if(empty($dataset)) {
+        if (empty($dataset)) {
             $this->sorter = new NullArrayStrategy();
         }
+
         return $this->sorter->sort($dataset);
     }
 }

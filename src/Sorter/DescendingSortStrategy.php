@@ -10,7 +10,7 @@ class DescendingSortStrategy implements SortStrategyInterface
     {
         $usort = \asort($dataset);
 
-        if(!$usort) {
+        if (!$usort) {
             throw new InvalidSortArrayException($dataset);
         }
 

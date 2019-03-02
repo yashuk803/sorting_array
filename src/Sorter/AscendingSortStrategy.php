@@ -10,7 +10,7 @@ class AscendingSortStrategy implements SortStrategyInterface
     {
         $arsort = \arsort($dataset);
 
-        if(!$arsort) {
+        if (!$arsort) {
             throw new InvalidSortArrayException($dataset);
         }
 

@@ -2,7 +2,8 @@
 
 namespace Yashuk803\Sorting\Sorter;
 
-interface SortStrategyInterface {
+interface SortStrategyInterface
+{
 
     /**
      * @return mixed
