@@ -6,11 +6,7 @@ This is a library for sorting array
 Installation
 ------------
 
-* For creating new project based on this template just execute the following command
-
 ```
-$ git clone https://github.com/yashuk803/library_serializer.git
-
 $ composer install
 ```
 
@@ -29,7 +25,7 @@ Usage
 3. You can use two type sorting array Ascending or Descending
 4. When you can use empty array, method sorter return message 'Array is empty'
 
-Exemple
+Example
 ----------------
 ./tests/sorter/sorter.php
 
@@ -95,12 +91,23 @@ print_r($sorter->sort($dataset));
     [5] => 16
 )
 */
-$dataset = [];
 
-$sorter = new Sorter($factory->createAscendingSort());
-print_r($sorter->sort($dataset)); //Array is empty
+$sorter = new Sorter($factory->createNullArraySort());
+$sorter->setSorterStrategy($factory->createDescendingSort());
+print_r($sorter->sort($dataset));
+/*
+ Array
+(
+    [0] => 4
+    [3] => 5
+    [1] => 6
+    [4] => 8
+    [2] => 10
+    [5] => 16
+)
+*/
 
 $sorter = new Sorter($factory->createDescendingSort());
-print_r($sorter->sort($dataset)); //Array is empty
+$sorter->sort($dataset); //null
 ```
 

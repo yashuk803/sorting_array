@@ -1,5 +1,9 @@
 <?php
 
+$header = <<<HEADER
+This file is part of sorting-array package.
+(c) Tarantsova Mariia <yashuk803@gmail.com>
+HEADER;
 
 $finder = \PhpCsFixer\Finder::create()
     ->in(__DIR__)
@@ -42,6 +46,11 @@ return \PhpCsFixer\Config::create()
         'final_internal_class' => true,
         'function_to_constant' => true,
         'function_typehint_space' => true,
+        'header_comment' => [
+             'header' => $header,
+             'commentType' => 'comment',
+             'separate' => 'both',
+        ],
         'is_null' => true,
         'logical_operators' => true,
         'lowercase_cast' => true,

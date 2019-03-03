@@ -1,8 +1,13 @@
 <?php
 
+/*
+ * This file is part of sorting-array package.
+ * (c) Tarantsova Mariia <yashuk803@gmail.com>
+ */
+
 namespace Yashuk803\Sorting\Exception;
 
-class InvalidSortArrayException extends \DomainException
+class InvalidSortArrayException extends \RuntimeException
 {
     public function __construct($dataset)
     {

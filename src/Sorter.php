@@ -1,8 +1,12 @@
 <?php
 
+/*
+ * This file is part of sorting-array package.
+ * (c) Tarantsova Mariia <yashuk803@gmail.com>
+ */
+
 namespace Yashuk803\Sorting;
 
-use Yashuk803\Sorting\Sorter\NullArrayStrategy;
 use Yashuk803\Sorting\Sorter\SortStrategyInterface;
 
 class Sorter
@@ -17,16 +21,20 @@ class Sorter
     {
         $this->sorter = $sorter;
     }
+    /**
+     * @param $sorter SortStrategyInterface;
+     *
+     */
+    public function setSorterStrategy(SortStrategyInterface $sorter)
+    {
+        $this->sorter = $sorter;
+    }
 
     /**
      * @return mixed
      */
     public function sort(array $dataset)
     {
-        if (empty($dataset)) {
-            $this->sorter = new NullArrayStrategy();
-        }
-
         return $this->sorter->sort($dataset);
     }
 }

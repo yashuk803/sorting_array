@@ -60,10 +60,20 @@ print_r($sorter->sort($dataset));
     [5] => 16
 )
 */
-$dataset = [];
 
-$sorter = new Sorter($factory->createAscendingSort());
-print_r($sorter->sort($dataset)); //Array is empty
-
-$sorter = new Sorter($factory->createDescendingSort());
-print_r($sorter->sort($dataset)); //Array is empty
+$sorter = new Sorter($factory->createNullArraySort());
+$sorter->setSorterStrategy($factory->createDescendingSort());
+print_r($sorter->sort($dataset));
+/*
+ Array
+(
+    [0] => 4
+    [3] => 5
+    [1] => 6
+    [4] => 8
+    [2] => 10
+    [5] => 16
+)
+*/
+$sorter = new Sorter($factory->createNullArraySort());
+$sorter->sort($dataset); //Null

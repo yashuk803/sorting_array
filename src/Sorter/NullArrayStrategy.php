@@ -1,11 +1,19 @@
 <?php
 
+/*
+ * This file is part of sorting-array package.
+ * (c) Tarantsova Mariia <yashuk803@gmail.com>
+ */
+
 namespace Yashuk803\Sorting\Sorter;
 
 class NullArrayStrategy implements SortStrategyInterface
 {
-    public function sort(array $dataset): string
+    /**
+     * @return null
+     */
+    public function sort(array $dataset)
     {
-        return \sprintf('Array is empty' . \PHP_EOL);
+        return $dataset = null;
     }
 }
