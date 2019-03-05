@@ -9,11 +9,18 @@ namespace Yashuk803\Sorting\Sorter;
 
 use Yashuk803\Sorting\Exception\InvalidSortArrayException;
 
-/**
- * Class DescendingSortStrategy
- */
 class DescendingSortStrategy implements SortStrategyInterface
 {
+    /**
+     * Method for sorting array descending
+     *
+     * This method sort array maintaining index association and
+     * use standard function php asort
+     *
+     * @see http://php.net/manual/en/function.asort.php
+     *
+     * @throws InvalidSortArrayException if function asort return false
+     */
     public function sort(array $dataset): array
     {
         $usort = \asort($dataset);

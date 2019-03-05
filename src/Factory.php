@@ -11,11 +11,6 @@ use Yashuk803\Sorting\Sorter\AscendingSortStrategy;
 use Yashuk803\Sorting\Sorter\DescendingSortStrategy;
 use Yashuk803\Sorting\Sorter\NullArrayStrategy;
 
-/**
- * Class Factory
- *
- * This class for generate classes with different types of sorters
- */
 class Factory
 {
     public function createAscendingSort(): AscendingSortStrategy

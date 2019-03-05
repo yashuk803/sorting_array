@@ -7,12 +7,10 @@
 
 namespace Yashuk803\Sorting\Sorter;
 
-/**
- * Class NullArrayStrategy
- */
 class NullArrayStrategy implements SortStrategyInterface
 {
     /**
+     * Method to reset the sort
      *
      * @return null
      */

@@ -9,9 +9,6 @@ namespace Yashuk803\Sorting;
 
 use Yashuk803\Sorting\Sorter\SortStrategyInterface;
 
-/**
- * Class Sorter
- */
 class Sorter
 {
     /**
@@ -24,15 +21,19 @@ class Sorter
     {
         $this->sorter = $sorter;
     }
-    /**
-     * @param $sorter SortStrategyInterface;
-     *
-     */
+
     public function setSorterStrategy(SortStrategyInterface $sorter)
     {
         $this->sorter = $sorter;
     }
 
+    /**
+     * Return sorted array or null
+     *
+     * @param array $dataset
+     * @return array|null Null is returned
+     * if the attribute is invalid or does not need to be sorted.
+     */
     public function sort(array $dataset): ?array
     {
         return $this->sorter->sort($dataset);
