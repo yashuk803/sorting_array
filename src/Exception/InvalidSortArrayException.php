@@ -7,6 +7,9 @@
 
 namespace Yashuk803\Sorting\Exception;
 
+/**
+ * Class InvalidSortArrayException
+ */
 class InvalidSortArrayException extends \RuntimeException
 {
     public function __construct($dataset)

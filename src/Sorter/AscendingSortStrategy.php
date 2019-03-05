@@ -9,6 +9,9 @@ namespace Yashuk803\Sorting\Sorter;
 
 use Yashuk803\Sorting\Exception\InvalidSortArrayException;
 
+/**
+ * Class AscendingSortStrategy
+ */
 class AscendingSortStrategy implements SortStrategyInterface
 {
     public function sort(array $dataset): array

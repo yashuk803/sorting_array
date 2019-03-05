@@ -7,14 +7,7 @@ Installation
 ------------
 
 ```
-$ composer install
-```
-
-* Or use composer
-
-```
-composer require yashuk803/sorting-array
-
+https://packagist.org/packages/yashuk803/sorting-array
 ```
 
 Usage

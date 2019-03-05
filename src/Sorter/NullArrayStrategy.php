@@ -7,13 +7,17 @@
 
 namespace Yashuk803\Sorting\Sorter;
 
+/**
+ * Class NullArrayStrategy
+ */
 class NullArrayStrategy implements SortStrategyInterface
 {
     /**
+     *
      * @return null
      */
     public function sort(array $dataset)
     {
-        return $dataset = null;
+        return null;
     }
 }

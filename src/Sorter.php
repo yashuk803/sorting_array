@@ -9,6 +9,9 @@ namespace Yashuk803\Sorting;
 
 use Yashuk803\Sorting\Sorter\SortStrategyInterface;
 
+/**
+ * Class Sorter
+ */
 class Sorter
 {
     /**
@@ -30,10 +33,7 @@ class Sorter
         $this->sorter = $sorter;
     }
 
-    /**
-     * @return mixed
-     */
-    public function sort(array $dataset)
+    public function sort(array $dataset): ?array
     {
         return $this->sorter->sort($dataset);
     }
